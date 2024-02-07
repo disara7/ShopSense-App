@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shopsense/home.dart';
+import 'package:shopsense/splash.dart';
+import './assets/theme.dart';
 
 void main() {
   runApp(MainApp());
@@ -11,7 +12,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      theme: AppTheme.lightTheme(),
+      home: SplashScreen(),
     );
   }
 }
